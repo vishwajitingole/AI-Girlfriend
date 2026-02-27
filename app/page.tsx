@@ -11,7 +11,6 @@ export default function VRosePremium() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [userId,setUserId]=useState<number>();
 
-  // Auto-scroll to bottom with smooth behavior
   useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
